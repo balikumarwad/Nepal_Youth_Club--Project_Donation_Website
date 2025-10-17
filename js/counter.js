@@ -1,13 +1,19 @@
 function initCounter() {
   const counters = document.querySelectorAll('.counter');
-  const speed = 100; // lower = faster
-
+  
+  // Comment out the animation logic and just set the final values
+  counters.forEach(counter => {
+    const target = +counter.getAttribute('data-target');
+    counter.innerText = target + '+';
+  });
+  
+  /* Uncomment this block to enable animation
+  const speed = 100;
   counters.forEach(counter => {
     const animate = () => {
       const target = +counter.getAttribute('data-target');
-      const count = +counter.innerText.replace('+',''); // remove + if exists
+      const count = +counter.innerText.replace('+','');
       const increment = target / speed;
-
       if (count < target) {
         counter.innerText = Math.ceil(count + increment);
         setTimeout(animate, 20);
@@ -15,7 +21,6 @@ function initCounter() {
         counter.innerText = target + '+';
       }
     };
-
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -24,8 +29,9 @@ function initCounter() {
         }
       });
     });
-
     observer.observe(counter);
   });
+  */
 }
+
 document.addEventListener('DOMContentLoaded', initCounter);
