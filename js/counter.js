@@ -28,3 +28,4 @@ function initCounter() {
     observer.observe(counter);
   });
 }
+document.addEventListener('DOMContentLoaded', initCounter);

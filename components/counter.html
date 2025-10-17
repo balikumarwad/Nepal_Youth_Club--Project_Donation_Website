@@ -1,27 +1,25 @@
-<section class="counter-section py-16 bg-gray-200 text-black mx-4 sm:mx-16 rounded-xl shadow-[0_10px_25px_rgba(100,149,237,0.2)]">
-    <div class="w-full">
-        <div class="grid grid-cols-1 sm:grid-cols-3 divide-y sm:divide-y-0 sm:divide-x divide-black/20">
-
-            <!-- Stat 1 -->
-            <div class="stat text-center py-10">
-                <div class="stat-value text-5xl font-extrabold counter" data-target="120" data-suffix="+">0</div>
-                <div class="stat-title text-lg font-semibold text-black/70 mt-2">Volunteers</div>
-            </div>
-
-            <!-- Stat 2 -->
-            <div class="stat text-center py-10">
-                <div class="stat-value text-5xl font-extrabold counter" data-target="250" data-suffix="+">0</div>
-                <div class="stat-title text-lg font-semibold text-black/70 mt-2">Projects</div>
-            </div>
-
-            <!-- Stat 3 -->
-            <div class="stat text-center py-10">
-                <div class="stat-value text-5xl font-extrabold counter" data-target="50" data-suffix="+">0</div>
-                <div class="stat-title text-lg font-semibold text-black/70 mt-2">Life Helped</div>
-            </div>
-
-        </div>
+<section class="py-16 mx-12 px-4">
+  <div class="w-full bg-white rounded-2xl shadow-[0_10px_20px_-5px_rgba(59,130,246,0.3)] overflow-hidden">
+    <div class="flex flex-col sm:flex-row divide-y sm:divide-y-0 sm:divide-x divide-gray-300">
+      <!-- Stat 1 -->
+      <div class="flex-1 text-center py-16 px-6 relative">
+        <div class="text-6xl sm:text-7xl font-bold text-gray-900 mb-3 counter" data-target="50">0</div>
+        <div class="text-base sm:text-lg text-gray-600 font-medium">Volunteers</div>
+        <div class="hidden sm:block absolute top-0 bottom-0 right-0 w-px shadow-[2px_0_8px_rgba(59,130,246,0.4)]"></div>
+      </div>
+     
+      <!-- Stat 2 -->
+      <div class="flex-1 text-center py-16 px-6 relative">
+        <div class="text-6xl sm:text-7xl font-bold text-gray-900 mb-3 counter" data-target="200">0</div>
+        <div class="text-base sm:text-lg text-gray-600 font-medium">Life Helped</div>
+        <div class="hidden sm:block absolute top-0 bottom-0 right-0 w-px shadow-[2px_0_8px_rgba(59,130,246,0.4)]"></div>
+      </div>
+     
+      <!-- Stat 3 -->
+      <div class="flex-1 text-center py-16 px-6">
+        <div class="text-6xl sm:text-7xl font-bold text-gray-900 mb-3 counter" data-target="10">0</div>
+        <div class="text-base sm:text-lg text-gray-600 font-medium">Projects</div>
+      </div>
     </div>
+  </div>
 </section>
-
-<script src="../js/counter.js" defer></script>
